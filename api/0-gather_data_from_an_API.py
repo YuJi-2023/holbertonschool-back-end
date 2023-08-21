@@ -25,8 +25,8 @@ if __name__ == "__main__":
             for todo in todos_data:
                 if todo.get("completed") is True:
                     todos_completed += 1
-            print(f"Employee {e_name} is done with taskis\
-                  ({todos_completed}/{todos_total}):")
+            print(f"Employee {e_name} is done with tasks({todos_completed}\
+/{todos_total}):")
             for todo in todos_data:
                 if todo.get("completed") is True:
                     print(f"\t {todo.get('title')}")
