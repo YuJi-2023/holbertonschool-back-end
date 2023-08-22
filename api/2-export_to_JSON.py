@@ -23,7 +23,7 @@ if __name__ == "__main__":
         response_todos = requests.get(url_todos)
         if response_todos.status_code == 200:
             todos_data = response_todos.json()
- 
+
         task_list = []
         for todo in todos_data:
             task_description = {
